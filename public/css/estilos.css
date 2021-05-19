@@ -1,0 +1,86 @@
+body {
+    background-color: rgb(174, 228, 201);
+}
+
+@media screen and (max-width: 800px) {
+    h1 {
+        font-size: 25px;
+    }
+    #descripcion {
+        font-size: 15px;
+    }
+    header {
+        text-align: center;
+    }
+    .desplegable {
+        width: 300px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+}
+
+h1,
+h2 {
+    font-family: Bookman, "URW Bookman L", serif;
+    color: #498F9D;
+    text-align: center;
+}
+
+.admin {
+    font-family: Bookman, "URW Bookman L", serif;
+    color: #498F9D;
+    text-align: left;
+    font-size: 21px;
+}
+
+span {
+    font-size: 15px;
+}
+
+strong {
+    font-size: 20px;
+    color: rgb(30, 115, 226)
+}
+
+.p1 {
+    color: rgb(34, 34, 34);
+    font-size: 15px;
+    font-family: arial, helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.a1 {
+    color: rgb(66, 202, 244);
+    text-decoration-line: none;
+}
+
+header img {
+    float: right;
+}
+
+header {
+    background-image: url('/images/star2.png');
+}
+
+nav {
+    background: linear-gradient(180deg, rgb(18, 104, 161) 10%, rgb(43, 234, 248) 80%);
+}
+
+nav a,
+nav a:hover,
+.navbar-brand {
+    color: black;
+}
+
+.desplegable {
+    background-color: #84a5c4;
+}
+
+footer {
+    background-color: #f1d072;
+}
+
+#contingut {
+    background-color: #ffffff;
+}

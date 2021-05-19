@@ -1,0 +1,23 @@
+.btn-facebook {
+    margin: 10px;
+    background-color: #3B5998;
+    color: white;
+}
+
+.btn-twitter {
+    margin: 10px;
+    background-color: #55acee;
+    color: white;
+}
+
+.btn-whatsapp {
+    margin: 10px;
+    background-color: #25D366;
+    color: white;
+}
+
+.btn-telegram {
+    margin: 10px;
+    background-color: #0088cc;
+    color: white;
+}
