@@ -33,6 +33,7 @@ class PagamentsController extends Controller
         $pagamentstabla->estat = $request->input('estat');
         $pagamentstabla->save();
         return redirect('/pagaments')->with('status','Se ha creado el pago correctamente.');
+        
     }
     public function edit($id)
     {

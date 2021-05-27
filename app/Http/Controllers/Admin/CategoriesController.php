@@ -14,6 +14,9 @@ class CategoriesController extends Controller
 
     }
     public function store(Request $request){
+        $validate = $request->validate([
+            'categoria'=> 'required|unique:categories'
+        ]);
         $categoriestabla = new Categories;
 
         $categoriestabla->categoria = $request->input('categoria');
@@ -21,7 +24,8 @@ class CategoriesController extends Controller
         $categoriestabla->save();
         return redirect('/categories')->with('status','Se ha creado la categoria correctamente.');
     }
-    public function edit($id)
+    
+    public function edit($id,Request $request)
     {
          $categories = Categories::findOrFail($id);
         return view('admin.categories.edit')
@@ -29,6 +33,9 @@ class CategoriesController extends Controller
     }
     public function update(Request $request,$id)
     {
+        $validate = $request->validate([
+            'categoria'=> 'required|unique:categories'
+        ]);
         $categories = Categories::findOrFail($id);
         $categories->categoria =$request->input('categoria');
         $categories->update();
@@ -41,4 +48,5 @@ class CategoriesController extends Controller
         return redirect('categories')->with('status','Categoria eliminada correctamente.');
 
     }
+  
 }

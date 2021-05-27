@@ -30,7 +30,7 @@ class LoginController extends Controller
    // protected $redirectTo = '/home';
     protected function redirectTo()
     {
-        if(Auth::user()->usertype == 'admin')
+        if(Auth::user()->usertype == 'admin' || Auth::user()->usertype =='usuari') 
         {
             return 'dashboard';
         }else {

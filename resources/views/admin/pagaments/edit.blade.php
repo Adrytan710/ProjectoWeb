@@ -20,29 +20,29 @@
                       
                         <div class="mb-3">
                           <label for="recipient-name" class="col-form-label"> Categoria ID </label>
-                          <input name="categoria_id" class="form-control" value="{{$pagaments->categoria_id}}" required>
+                          <select name="categoria_id" class="form-control" value="{{$pagaments->categoria_id}}" required>
                              <option value="">Categories disponibles</option>
                              @foreach ($categories as $item)
-                              <option value="">{{$item->id}}</option>
+                              <option value="{{$item->id}}">{{$item->id}}</option>
                              @endforeach  
                           </select>
                        </div>
                        
                        <div class="mb-3">
                         <label for="recipient-name" class="col-form-label"> Compte ID </label>
-                        <input name="compte_id" class="form-control" id="recipient-name" value="{{$pagaments->compte_id}}" required>
+                        <select name="compte_id" class="form-control" id="recipient-name" value="{{$pagaments->compte_id}}" required>
                            <option value="">Comptes disponibles</option>
                            @foreach ($comptes as $item)
-                            <option value="">{{$item->id}}</option>
+                            <option value="{{$item->id}}">{{$item->id}}</option>
                            @endforeach  
                         </select>
                      </div>
                           <div class="mb-3">
-                            <label for="recipient-name" class="col-form-label"> Curs ID </label>
-                            <input name="curs_id" class="form-control" id="recipient-name" value="{{$pagaments->curs_id}}"required>
+                            <label > Curs ID </label>
+                            <select name="curs_id" class="form-control" required>
                                <option value="">Cursos disponibles</option>
                                @foreach ($cursos as $item)
-                                <option value="">{{$item->id}}</option>
+                                <option value="{{$item->id}}">{{$item->id}}</option>
                                @endforeach  
                             </select>
                          </div>
